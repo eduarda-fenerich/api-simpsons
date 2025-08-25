@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #190227;
+    margin: 0;
+    padding: 20px;
+    background-image: url('./image/capa.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #29c910;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px #000000a2;
+    font-size: 4rem;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#pageInput {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px #000000a2;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3f149d;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchBtn:hover {
+    background-color: #8622d7;
+    box-shadow: 0 2px 8px #000000a2;
+    ;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+.card:hover{
+    box-shadow: rgba(88, 240, 46, 0.639) -5px 5px, rgba(46, 197, 29, 0.654) -10px 10px, rgba(26, 141, 42, 0.468) -15px 15px, rgba(14, 85, 33, 0.378) -20px 20px, rgba(11, 84, 37, 0.216) -25px 25px;
+}
+
+.card:hover h3{
+    color: #29c910;
+    text-shadow: 0 2px 8px #29c910;
+}
+
+.card:hover img{
+    border-radius: 10px;
+}
+
+.card h3{
+    margin: 10px 0 5px;
+    font-size: 22px;
+    color: #fff;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.card p{
+    font-size: 14px;
+    color: #ccc;
+    font-family: cursive;
+}
+
+.card:hover p{
+    color: #fff;
+}
+
+.card strong{
+    color: #29c910;
+    font-size: bold;
+    font-family: cursive;
+}
