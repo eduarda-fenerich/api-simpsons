@@ -15,16 +15,23 @@ async function fetchCharacters(page) {
             return
         }
 
-        resultsDiv.innerHTML = ""
+        const imgBaseUrl = "https://cdn.thesimpsonsapi.com/500"
+
+    resultsDiv.innerHTML = ""
+
         data.results.forEach(character => {
+            const portraitPath = character.portrait_path.startsWith('/')
+                ? character.portrait_path.slice(1)
+                : character.portrait_path
+        
             const card = document.createElement("div")
             card.className = 'card'
             card.innerHTML = `
-                <img src="${character.portrait_path}" alt="${character.name}">
+                <img src="${imgBaseUrl}/${portraitPath}" alt="${character.name}">
                 <h3>${character.name}</h3>
-                <p><strong>Status:</strong>${character.status}</p>
-                <p><strong>Espécie</strong>${character.species}</p>
-        `
+                <p><strong>Status:</strong> ${character.status}</p>
+                <p><strong>Espécie:</strong> ${character.species}</p>
+            `
             resultsDiv.appendChild(card)
         })
 
