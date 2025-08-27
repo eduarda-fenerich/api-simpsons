@@ -31,7 +31,7 @@ async function fetchCharacters(page) {
                 <h3>${character.name}</h3>
                 <p><strong>Status:</strong> ${character.status}</p>
                 <p><strong>Espécie:</strong> ${character.species}</p>
-                <p>"${character.phrases[0]}"</p>
+                <aside className="eigarotinha">"${character.phrases[0]}"</aside>
             `
             resultsDiv.appendChild(card)
         })
