@@ -17,10 +17,11 @@ body {
 }
 
 h1 {
-    color: #29c910;
+    color: #8e54e0;
     margin-bottom: 20px;
-    text-shadow: 0 2px 8px #000000a2;
+    text-shadow: #000 5px 5px 3px;
     font-size: 4rem;
+   
 }
 
 .search-box {
@@ -68,28 +69,29 @@ h1 {
     text-align: center;
     color: #fff;
     transition: all 200ms ease-in-out;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: rgba(240, 230, 46, 0.4) -5px 5px, rgba(240, 237, 46, 0.3) -10px 10px, rgba(240, 230, 46, 0.2) -15px 15px, rgba(211, 240, 46, 0.1) -20px 20px, rgba(230, 240, 46, 0.05) -25px 25px;
 }
 
 .card img{
     width: 100%;
     height: auto;
-    transition: all 1500ms ease-in-out;
+    transition: all 1s ease-in-out;
     filter: grayscale(1);
+    transform: scale(0.8) 
 }
 
 .card:hover img{
-    transform: scale(2) rotate(360deg) ;
+    transform: scale(1.1) rotate(360deg);
     filter: drop-shadow(15px 15px 70px rgb(238, 1, 255)) grayscale(0);
 }
 
 .card:hover{
-    box-shadow: rgba(88, 240, 46, 0.639) -5px 5px, rgba(46, 197, 29, 0.654) -10px 10px, rgba(26, 141, 42, 0.468) -15px 15px, rgba(14, 85, 33, 0.378) -20px 20px, rgba(11, 84, 37, 0.216) -25px 25px;
+    box-shadow: rgba(133, 46, 240, 0.472) -5px 5px, rgba(105, 29, 197, 0.453) -10px 10px, rgba(80, 26, 141, 0.4) -15px 15px, rgba(54, 14, 85, 0.378) -20px 20px, rgba(52, 11, 84, 0.216) -25px 25px;
 }
 
 .card:hover h3{
-    color: #29c910;
-    text-shadow: 0 2px 8px #29c910;
+    color: #f3dd1f;
+    text-shadow: 0 2px 8px #f3dd1f;
 }
 
 .card h3{
@@ -111,7 +113,7 @@ h1 {
 }
 
 .card strong{
-    color: #29c910;
+    color: #f3dd1f;
     font-size: bold;
     font-family: cursive;
 }
